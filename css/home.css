@@ -1,0 +1,251 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0000001a;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px #00000080;
+}
+
+::selection {
+    background: #000;
+    color: #fff
+}
+
+.main {
+    max-width: auto !important;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bg {
+    background: linear-gradient(45deg, #ffffff99, #ffffffcc), url("https://article.biliimg.com/bfs/article/a6e6a332b39ac14f033c31d4e7463d4c7482320f.jpg"), url("https://www.z4a.net/images/2023/09/05/0.jpg") no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    top: 0;
+}
+
+div.loaded {
+    opacity: 100;
+    transition: opacity 600ms;
+}
+
+.main-box {
+    border-radius: 20px;
+    background-color: #ffffff66;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 100px #b0b0b0;
+    margin: 5em;
+    min-width: 45em;
+    max-width: 53em;
+    opacity: 0;
+}
+
+.box-left {
+    border-right: 1px solid;
+    text-align: center;
+    padding: 25px 10% 0;
+    height: 100%;
+}
+
+.box-left img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 15em;
+    box-shadow: 0 0 10px #aaa;
+    /* cursor: wait; */
+    margin-bottom: 1em;
+}
+
+.box-left img:hover {
+    transform: rotate(360deg);
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+
+.box-left h1 {
+    font-weight: 400;
+    font-size: 1.7em;
+}
+
+.box-right {
+    display: flex;
+    align-items: center;
+}
+
+.badge {
+    font-weight: 400 !important;
+    font-size: 0.9em !important;
+    padding-right: 0.75rem !important;
+    margin-bottom: 6px;
+}
+
+.badge[tooltip] {
+    cursor: pointer;
+}
+
+.bg-pink {
+    background-color: #F76496;
+}
+
+.primary {
+    font-size: 2.3em;
+    font-weight: bolder;
+}
+
+.box-content {
+    width: fit-content;
+}
+
+.box-content p {
+    padding: 0;
+    margin: 10px;
+}
+
+.box-content span[tooltip]:hover {
+    box-shadow: 0 0 10px #000;
+}
+
+
+/* Tooltip */
+.bubble {
+    position: relative;
+}
+
+.bubble:after {
+    content: attr(tooltip);
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-145%);
+
+    width: fit-content;
+    padding: 10px 17px 10px 17px;
+    border-radius: 50px;
+    background: rgb(79, 79, 79);
+    color: #fff;
+    text-align: center;
+
+    display: block;
+    pointer-events: none;
+
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.bubble:hover:after {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #5a5a5a;
+    text-align: center;
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    .bubble::after {
+        display: none;
+    }
+
+    .container {
+        padding: 0 !important;
+    }
+
+    .bg {
+        background: linear-gradient(45deg, #ffffff99, #ffffffcc), url("https://article.biliimg.com/bfs/article/7265ec1ba904ef134321f8cc9068d7653eb9f36c.jpg"), url("https://www.z4a.net/images/2023/09/05/00011_proc.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    .main-box {
+        max-width: 423px;
+        min-width: 300px;
+        /* margin-top: 15% */
+        margin: 5%
+    }
+
+    .box-left {
+        border: 0 !important;
+    }
+
+    .box-content {
+        margin: 0 2em;
+        width: 88%;
+    }
+}
+
+/* Dark Mode*/
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #dadada
+    }
+
+    p, h1 {
+        color: #fff;
+    }
+
+    span.bg-dark, span.bg-black {
+        background-color: #f6f6f6 !important;
+        color: #000 !important;
+    }
+
+    .box-left {
+        border-right: 1px solid #f6f6f6;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #ffffff1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 6px #ffffff80;
+    }
+
+    ::selection {
+        background: #fff;
+        color: #000
+    }
+
+    .bg {
+        background: linear-gradient(45deg, #00000099, #000000cc), url("https://article.biliimg.com/bfs/article/a6e6a332b39ac14f033c31d4e7463d4c7482320f.jpg"), url("https://www.z4a.net/images/2023/09/05/0.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    .main-box {
+        background-color: #00000066;
+        box-shadow: 0 0 20px #00000054;
+    }
+
+    @media (max-width: 768px) {
+        .bg {
+            background: linear-gradient(45deg, #00000099, #000000cc), url("https://article.biliimg.com/bfs/article/7265ec1ba904ef134321f8cc9068d7653eb9f36c.jpg"), url("https://www.z4a.net/images/2023/09/05/00011_proc.jpg") no-repeat;
+            background-size: cover;
+        }
+
+    }
+}
