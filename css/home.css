@@ -7,6 +7,11 @@ body {
     user-select: none;
 }
 
+footer a {
+    text-decoration: none;
+    color: #3d7a98
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
