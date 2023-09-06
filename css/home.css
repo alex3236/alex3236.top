@@ -7,11 +7,6 @@ body {
     user-select: none;
 }
 
-footer a {
-    text-decoration: none;
-    color: #3d7a98
-}
-
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -30,13 +25,13 @@ footer a {
 }
 
 .main {
-    max-width: auto !important;
     width: 100%;
     height: 100%;
     position: fixed;
     justify-content: center;
     align-items: center;
     display: flex;
+    font-weight: 600;
 }
 
 .bg {
@@ -88,7 +83,7 @@ div.loaded {
 }
 
 .box-left h1 {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.7em;
 }
 
@@ -114,7 +109,6 @@ div.loaded {
 
 .primary {
     font-size: 2.3em;
-    font-weight: bolder;
 }
 
 .box-content {
@@ -168,8 +162,22 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    color: #5a5a5a;
     text-align: center;
+    color: #ff5656;
+}
+
+footer a {
+    padding: 10px;
+    text-align: center;
+    font-weight: 600 !important;
+    /* letter-spacing: 0.5px; */
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    color: inherit;
+    text-shadow: 0 0 10px #56bbff;
 }
 
 /* Phone */
@@ -201,6 +209,10 @@ footer {
     .box-content {
         margin: 0 2em;
         width: 88%;
+    }
+
+    footer, .main {
+        position: unset;
     }
 }
 
@@ -244,6 +256,10 @@ footer {
     .main-box {
         background-color: #00000066;
         box-shadow: 0 0 20px #00000054;
+    }
+
+    .box-content span[tooltip]:hover {
+        box-shadow: 0 0 10px #fff;
     }
 
     @media (max-width: 768px) {

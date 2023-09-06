@@ -62,3 +62,11 @@
 .icon-github:before {
   content: "\eab0";
 }
+.icon-moe:before {
+  font-size: 32px;
+  vertical-align: -0.27em;
+  content: "\e908";
+}
+.icon-music:before {
+  content: "\e909";
+}
