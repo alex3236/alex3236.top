@@ -59,6 +59,7 @@ i18n = {
 userLang = navigator.language || navigator.userLanguage;
 is_zh = userLang.startsWith('zh');
 trans = is_zh ? i18n.zh_cn : i18n.en_us;
+document.documentElement.lang = is_zh? 'zh-CN': 'en';
 
 document.querySelectorAll('.docopy').forEach(function (element) {
     element.addEventListener('click', function (event) {
