@@ -191,7 +191,7 @@ footer a:hover {
     }
 
     .bg {
-        background: linear-gradient(45deg, #ffffff99, #ffffffcc), url("https://article.biliimg.com/bfs/article/7265ec1ba904ef134321f8cc9068d7653eb9f36c.jpg"), url("https://www.z4a.net/images/2023/09/05/00011_proc.jpg") no-repeat;
+        background: linear-gradient(45deg, #ffffff99, #ffffffcc), url("https://www.z4a.net/images/2023/09/05/00011_proc.jpg") no-repeat;
         background-size: cover;
     }
 
@@ -249,7 +249,7 @@ footer a:hover {
     }
 
     .bg {
-        background: linear-gradient(45deg, #00000099, #000000cc), url("https://article.biliimg.com/bfs/article/a6e6a332b39ac14f033c31d4e7463d4c7482320f.jpg"), url("https://www.z4a.net/images/2023/09/05/0.jpg") no-repeat;
+        background: linear-gradient(45deg, #00000099, #000000cc), url("https://www.z4a.net/images/2023/09/05/0.jpg") no-repeat;
         background-size: cover;
     }
 
@@ -264,7 +264,7 @@ footer a:hover {
 
     @media (max-width: 768px) {
         .bg {
-            background: linear-gradient(45deg, #00000099, #000000cc), url("https://article.biliimg.com/bfs/article/7265ec1ba904ef134321f8cc9068d7653eb9f36c.jpg"), url("https://www.z4a.net/images/2023/09/05/00011_proc.jpg") no-repeat;
+            background: linear-gradient(45deg, #00000099, #000000cc), url("https://www.z4a.net/images/2023/09/05/00011_proc.jpg") no-repeat;
             background-size: cover;
         }
 
