@@ -107,6 +107,10 @@ div.loaded {
     background-color: #F76496;
 }
 
+.bg-green {
+    background-color: rgb(54, 161, 54)
+}
+
 .primary {
     font-size: 2.3em;
 }

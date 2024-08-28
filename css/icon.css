@@ -29,29 +29,41 @@
   padding-right: 4px;
 }
 
-.icon-telegram:before {
+.icon-wechat:before {
   content: "\e900";
 }
-.icon-qq:before {
-  content: "\e902";
-}
-.icon-steam:before {
-  content: "\e903";
-}
-.icon-twitter:before {
-  content: "\e904";
-}
-.icon-tag:before {
-  content: "\e905";
-}
-.icon-birthday:before {
-  content: "\e906";
-}
-.icon-location:before {
+.icon-telegram:before {
   content: "\e901";
 }
-.icon-discord:before {
+.icon-location:before {
+  content: "\e902";
+}
+.icon-qq:before {
+  content: "\e903";
+}
+.icon-steam:before {
+  content: "\e904";
+}
+.icon-twitter:before {
+  content: "\e905";
+}
+.icon-tag:before {
+  content: "\e906";
+}
+.icon-birthday:before {
   content: "\e907";
+}
+.icon-discord:before {
+  content: "\e908";
+}
+.icon-moe:before {
+  content: "\e909";
+}
+.icon-netease:before {
+  content: "\e90a";
+}
+.icon-music:before {
+  content: "\e90b";
 }
 .icon-mail:before {
   content: "\e945";
@@ -61,12 +73,4 @@
 }
 .icon-github:before {
   content: "\eab0";
-}
-.icon-moe:before {
-  font-size: 32px;
-  vertical-align: -0.27em;
-  content: "\e908";
-}
-.icon-music:before {
-  content: "\e909";
 }
