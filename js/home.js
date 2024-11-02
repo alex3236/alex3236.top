@@ -41,6 +41,7 @@ i18n = {
     en_us: {
         console: "You found me! www",
         copied: 'Copied!',
+        "你好！这里是 Alex3236": "Hi! This is Alex3236",
         "你好呀": "Awww",
         "氦！": 'Hello there!',
         "你好呀~": "Hey!",
