@@ -29,7 +29,7 @@ i18n = {
     zh_cn: {
         console: "被你发现辣！",
         hello: [
-            "氦！佳想安善？",
+            "氦！",
             "你好呀~",
             "摸大鱼，摆大烂",
             "规则就是用来打破的",
@@ -42,7 +42,7 @@ i18n = {
         console: "You found me! www",
         copied: 'Copied!',
         "你好呀": "Awww",
-        "氦！佳想安善？": 'Hello there!',
+        "氦！": 'Hello there!',
         "你好呀~": "Hey!",
         "摸大鱼，摆大烂": "Ayyyyyy!",
         "规则就是用来打破的": "Welcome here",
@@ -51,8 +51,8 @@ i18n = {
         "重庆开州 | 福建泉州": "Kaizhou,Chongqing | Quanzhou,Fujian",
         "学生": "Student",
         "摆大烂": "Bullshit",
-        "原神": "GenshinImpact",
-        "星铁": "Honkai:SR",
+        "原神": "GI",
+        "星铁": "HSR",
     }
 }
 
