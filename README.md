@@ -1,5 +1,7 @@
 # Alex3236.top
 
+[![Vercel Deploy](https://deploy-badge.vercel.app/vercel/homepage-six-mu?style=for-the-badge)](https://alex3236.top)
+
 我的个人主页。
 
 ## 思路
