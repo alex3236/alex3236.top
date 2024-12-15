@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Main() {
     return <main className="flex lg:fixed overflow-auto h-full w-full items-center justify-center px-8 lg:px-16">
         <div className="flex flex-col items-center lg:flex-row">
-            <Image loading="eager" src="/image.png" alt="Avatar" width={384} height={510} className="lg:hidden relative w-64 h-64 my-8 object-cover object-top rounded-full shadow-md shadow-slate-300" />
+            <Image priority={true} src="/image.png" alt="Avatar" width={384} height={510} className="lg:hidden relative w-64 h-64 my-8 object-cover object-top rounded-full shadow-md shadow-slate-300" />
             <div className="max-w-xl lg:py-12 mx-3 h-full">
                 <h1 className="text-5xl md:text-6xl font-extrabold text-blue-200">你好！</h1>
                 <h2 className="text-3xl md:text-4xl font-bold mt-4 text-blue-300">
@@ -40,7 +40,7 @@ export default function Main() {
             </div>
             <div className="max-w-sm self-end hidden lg:block animate-img">
                 <Image
-                    loading="eager"
+                    priority={true}
                     src="/image.png"
                     alt="Avatar"
                     width={384} height={510}
