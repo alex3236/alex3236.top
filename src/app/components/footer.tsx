@@ -2,14 +2,16 @@ import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 
 interface AProps {
+  ariaLabel?: string;
   href: string;
   children: React.ReactNode;
 }
 
-const A: React.FC<AProps> = ({ href, children }) => {
+const A: React.FC<AProps> = ({ ariaLabel = '', href, children }) => {
   return (
     <a
       href={href}
+      aria-label={ariaLabel}
       className='drop-shadow-sm deop-shadow-black mx-2 my-1 hover:text-sky-200'
     >
       {children}
@@ -25,7 +27,7 @@ export default function Footer() {
     >
       <A href='https://icp.gov.moe/?keyword=20233236'>萌ICP备20233236</A> |
       <A
-        aria-label='Github page of this project'
+        ariaLabel='此项目的 Github 页面'
         href='https://github.com/alex3236/alex3236.top'
       >
         <FaGithub />
