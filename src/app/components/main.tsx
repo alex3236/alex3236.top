@@ -4,10 +4,10 @@ import '../style/animate-img.css'
 import Image from "next/image";
 
 export default function Main() {
-    return <main className="flex lg:fixed overflow-auto h-full w-full items-center justify-center px-8 lg:px-16">
-        <div className="flex flex-col items-center lg:flex-row">
-            <Image priority={true} src="/image.png" alt="Avatar" width={384} height={510} className="lg:hidden relative w-64 h-64 my-8 object-cover object-top rounded-full shadow-md shadow-slate-300" />
-            <div className="max-w-xl lg:py-12 mx-3 h-full">
+    return <main className="flex lg:fixed overflow-auto h-full w-full justify-center items-center px-8 pb-20 lg:px-16 lg:pb-0">
+        <div className="flex flex-col items-center lg:flex-row lg:mr-48">
+            <Image priority={true} src="/image.png" alt="Avatar" width={384} height={510} className="lg:hidden relative w-64 h-64 mt-16 mb-8 object-cover object-top rounded-full shadow-md shadow-slate-300" />
+            <div className="max-w-xl mx-3 h-full lg:py-12">
                 <h1 className="text-5xl md:text-6xl font-extrabold text-blue-200">你好！</h1>
                 <h2 className="text-3xl md:text-4xl font-bold mt-4 text-blue-300">
                     这里是 <span className="text-blue-400">Alex3236</span>
@@ -38,7 +38,7 @@ export default function Main() {
                 </PartHolder>
                 <h3 className="mt-2 text-xl text-sky-200 leading-relaxed">「 <B>不要因为走得太远，就忘了当初为什么出发。</B> 」</h3>
             </div>
-            <div className="max-w-sm self-end hidden lg:block animate-img">
+            <div className="max-w-sm self-end hidden lg:block animate-img absolute bottom-0 right-0">
                 <Image
                     priority={true}
                     src="/image.png"
