@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "LXGW WenKai Lite", Arial, Helvetica, sans-serif;
+  font-family: 'LXGW WenKai Lite', Arial, Helvetica, sans-serif;
   color: var(--foreground);
   background: var(--background);
 }
