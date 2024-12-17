@@ -3,7 +3,6 @@
 import React from 'react';
 import { IconBaseProps, IconType } from 'react-icons';
 import copy from 'copy-to-clipboard';
-import { redirect, RedirectType } from 'next/navigation';
 import { Tooltip } from 'react-tooltip';
 import Link from 'next/link';
 
@@ -20,11 +19,6 @@ interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   tooltip?: string;
   url?: string;
   disabled?: boolean;
-}
-
-function openInNewTab(url: string) {
-  const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-  if (newWindow) newWindow.opener = null;
 }
 
 export default function Badge({
