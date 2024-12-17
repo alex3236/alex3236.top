@@ -11,16 +11,17 @@ export default function Main() {
           priority={true}
           src='/image.png'
           alt='Avatar'
-          width={384}
-          height={510}
-          className='lg:hidden relative w-64 h-64 mt-16 mb-8 object-cover object-top rounded-full shadow-md shadow-slate-300'
+          width={256}
+          height={256}
+          className='lg:hidden relative max-h-64 max-w-64 mt-16 mb-8 object-cover object-top rounded-full shadow-md shadow-slate-400 dark:shadow-slate-300'
         />
         <div className='z-10 h-full md:ml-24 lg:ml-0 lg:py-12 lg:max-w-[50vw]'>
-          <h1 className='text-5xl md:text-6xl font-extrabold text-blue-200'>
+          <h1 className='text-5xl md:text-6xl font-extrabold text-sky-700 dark:text-blue-200'>
             你好！
           </h1>
-          <h2 className='text-3xl md:text-4xl font-bold mt-4 text-blue-300'>
-            这里是 <span className='text-blue-400'>Alex3236</span>
+          <h2 className='text-3xl md:text-4xl font-bold mt-4 text-sky-800 dark:text-blue-300'>
+            这里是
+            <span className='px-2 text-sky-900 dark:text-blue-400'>Alex3236</span>
           </h2>
           <PartHolder
             title={
@@ -155,7 +156,7 @@ export default function Main() {
               className='bg-zinc-600 text-white'
             />
           </PartHolder>
-          <h3 className='mt-2 text-xl text-sky-200 leading-relaxed'>
+          <h3 className='mt-2 text-xl text-sky-900 dark:text-sky-200 leading-relaxed'>
             「 <B>不要因为走得太远，就忘了当初为什么出发。</B> 」
           </h3>
         </div>

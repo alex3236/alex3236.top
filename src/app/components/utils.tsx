@@ -7,7 +7,7 @@ export function PartHolder({
 }) {
   return (
     <>
-      <h3 className='mt-3 text-xl text-sky-200 leading-relaxed'>{title}</h3>
+      <h3 className='mt-3 text-xl text-sky-900 dark:text-sky-200 leading-relaxed'>{title}</h3>
       <p>{children}</p>
     </>
   );

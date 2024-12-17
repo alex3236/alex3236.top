@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  font-family: 'LXGW WenKai Lite', Arial, Helvetica, sans-serif;
-  color: var(--foreground);
-  background: var(--background);
-}
-
 .svg-icon {
   width: 1em;
   height: 1em;

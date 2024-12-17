@@ -35,7 +35,7 @@ export default function Badge({
       data-tooltip-id='tooltip-provider'
       data-tooltip-content={tooltip}
       className={`inline-block rounded-full px-3 py-[.3rem] mx-1 mt-3 ${
-        disabled ? 'cursor-default' : 'hover:border hover:border-white'
+        disabled ? 'cursor-default' : 'hover:text-sky-200'
       } ${className}`}
       {...props}
       role='button'
@@ -67,10 +67,10 @@ export function TooltipProvider() {
   return (
     <Tooltip
       id='tooltip-provider'
+      opacity={1}
       style={{
         backgroundColor: 'rgb(88, 88, 88)',
         borderRadius: '9999px',
-        opacity: '1',
         zIndex: 9999,
       }}
     />

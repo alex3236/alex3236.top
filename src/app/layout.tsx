@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang='zh-CN'>
       <body
-        className={`${notoSans.className} antialiased select-none bg-black`}
+        className={`${notoSans.className} antialiased select-none bg-slate-300 dark:bg-gray-950`}
       >
         {children}
       </body>
