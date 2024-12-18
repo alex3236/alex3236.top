@@ -19,6 +19,7 @@ interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   tooltip?: string;
   url?: string;
   disabled?: boolean;
+  strikeThrough?: boolean;
 }
 
 export default function Badge({
@@ -28,6 +29,7 @@ export default function Badge({
   name = 'Test',
   tooltip,
   url,
+  strikeThrough = false,
   ...props
 }: BadgeProps) {
   const btn = (
@@ -51,7 +53,7 @@ export default function Badge({
         }
       }}
     >
-      <Icon name={icon} /> {name}
+      <Icon name={icon} /> {strikeThrough ? <s>{name}</s> : name}
     </button>
   );
   return url ? (

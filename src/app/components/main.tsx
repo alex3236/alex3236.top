@@ -65,11 +65,19 @@ export default function Main() {
               name='学生'
               className='bg-gray-600 text-white'
             />
+
             <Badge
               disabled={true}
               icon='FaFish'
               name='摆大烂'
               className='bg-gray-600 text-white'
+            />
+            <Badge
+              disabled={true}
+              strikeThrough={true}
+              icon='FaAccessibleIcon'
+              name='二次元'
+              className='bg-slate-500 text-white'
             />
           </PartHolder>
           <PartHolder
