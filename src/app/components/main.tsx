@@ -5,9 +5,17 @@ import Image from 'next/image';
 
 export default function Main() {
   return (
-    <main className='flex lg:fixed overflow-auto h-full w-full justify-center items-center px-8 pb-20 lg:px-16 lg:pb-0'>
-      <div className='flex flex-col items-center lg:flex-row lg:mr-48'>
+    <main
+      itemScope
+      itemType='https://schema.org/Person'
+      className='flex lg:fixed overflow-auto h-full w-full justify-center items-center px-8 pb-20 lg:px-16 lg:pb-0'
+    >
+      <div
+        itemProp='mainEntityOfPage'
+        className='flex flex-col items-center lg:flex-row lg:mr-48'
+      >
         <Image
+          itemProp='image'
           priority={true}
           src='/image.png'
           alt='Avatar'
@@ -21,7 +29,12 @@ export default function Main() {
           </h1>
           <h2 className='text-3xl md:text-4xl font-bold mt-4 text-sky-800 dark:text-blue-300'>
             这里是
-            <span className='px-2 text-sky-900 dark:text-blue-400'>Alex3236</span>
+            <span
+              itemProp='name'
+              className='px-2 text-sky-900 dark:text-blue-400'
+            >
+              Alex3236
+            </span>
           </h2>
           <PartHolder
             title={
@@ -31,12 +44,14 @@ export default function Main() {
             }
           >
             <Badge
+              itemProp='birthDate'
               disabled={true}
               icon='FaCakeCandles'
               name='十月廿一'
               className='bg-pink-700 text-white'
             />
             <Badge
+              itemProp='homeLocation'
               disabled={true}
               icon='FaLocationDot'
               name='重庆开州 | 福建泉州'
@@ -44,6 +59,7 @@ export default function Main() {
             />
             <br />
             <Badge
+              itemProp='jobTitle'
               disabled={true}
               icon='FaGraduationCap'
               name='学生'
@@ -151,6 +167,7 @@ export default function Main() {
             <Badge
               icon='FaEnvelope'
               tooltip='邮箱'
+              itemProp='email'
               url='mailto:me@alex3236.top'
               name='me@alex3236.top'
               className='bg-zinc-600 text-white'
@@ -162,6 +179,7 @@ export default function Main() {
         </div>
         <div className='max-w-sm self-end hidden lg:block animate-img absolute bottom-0 right-0'>
           <Image
+            itemProp='image'
             priority={true}
             src='/image.png'
             alt='Avatar'
