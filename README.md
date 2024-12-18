@@ -13,6 +13,10 @@
 
 用 React 重写了，思路没变（
 
+## Lighthouse
+
+![Screenshot](https://github.com/user-attachments/assets/e4f8843e-a57c-4f27-bbdc-e5c3f21a41cb)
+
 ## 许可
 
 此分支以 GPL v3 开源。
