@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <div
       id='icp'
-      className='z-20 fixed mt-6 bottom-0 px-2 w-full h-fit lg:w-fit lg:top-0 lg:right-4 lg:rounded-full bg-opacity-65 justify-center items-center flex align-middle text-white bg-gray-600'
+      className='z-20  fixed mt-6 bottom-0 px-2 w-full h-fit text-sm lg:text-base lg:w-fit lg:top-0 lg:right-4 lg:rounded-full bg-opacity-85 justify-center items-center flex align-middle text-white bg-gray-600'
     >
       <A href='https://icp.gov.moe/?keyword=20233236'>萌ICP备20233236</A> |
       <A
