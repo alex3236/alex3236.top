@@ -1,5 +1,4 @@
-import Badge, { TooltipProvider } from './badge';
-import { B, PartHolder } from './utils';
+import { TooltipProvider } from './badge';
 import '../style/animate-img.css';
 import Image from 'next/image';
 import PartContacts from './parts/contacts';

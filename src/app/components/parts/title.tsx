@@ -17,7 +17,7 @@ export function PartTitle() {
 }
 
 export function PartMotto() {
-  let motto =
+  const motto =
     Math.random() < 0.5
       ? '不要因为走得太远，就忘了当初为什么出发。'
       : '只要不失去你的崇高，整个世界都会向你敞开。';
