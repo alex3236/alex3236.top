@@ -47,7 +47,7 @@ export default function PartContacts() {
       <Badge
         icon='FaSteamSymbol'
         tooltip='Steam'
-        name='alex_3236'
+        name='alex3236_'
         className='bg-slate-900 text-white dark:border-slate-500 dark:border'
       />
       <Badge
