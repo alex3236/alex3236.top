@@ -17,10 +17,6 @@
 
 ![Screenshot](https://github.com/user-attachments/assets/e4f8843e-a57c-4f27-bbdc-e5c3f21a41cb)
 
-## 许可
-
-此分支以 GPL v3 开源。
-
 ## Development
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
@@ -37,19 +33,28 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-### Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
 ### Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+```plain
+Alex3236.top: 简单的个人主页
+
+版权所有 © 2023-2024 Alex3236
+
+本程序是自由软件: 您可以根据自由软件基金会发布的
+GNU 通用公共许可证第三版，或是您选择的任何更高版
+本中的条款，重新发布和/或修改本程序。
+
+本程序发布的目的是希望它能够发挥作用，但不提供任
+何保证；甚至不包括适销性或特定用途适用性的隐含保
+证。有关详细信息，请参阅 GNU 通用公共许可证。
+
+您应该已经随本程序一起收到了 GNU 通用公共许可证
+的副本。如果没有，请参阅
+<https://www.gnu.org/licenses/>。
+```
