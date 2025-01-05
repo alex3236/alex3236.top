@@ -11,6 +11,12 @@ export default function PartLabels() {
       }
     >
       <Badge
+        disabled={true}
+        icon='FaTent'
+        name='INFP'
+        className='bg-slate-700 text-white'
+      />
+      <Badge
         itemProp='birthDate'
         disabled={true}
         icon='FaCakeCandles'
