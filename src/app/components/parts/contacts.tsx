@@ -1,5 +1,5 @@
 import Badge from '../badge';
-import { B, PartHolder } from '../utils';
+import {B, PartHolder} from '../utils';
 
 export default function PartContacts() {
   return (

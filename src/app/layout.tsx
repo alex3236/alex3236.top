@@ -1,6 +1,7 @@
-import type { Metadata } from 'next';
-import { Noto_Sans_SC } from 'next/font/google';
+import type {Metadata} from 'next';
+import {Noto_Sans_SC} from 'next/font/google';
 import './globals.css';
+import React from "react";
 
 const notoSans = Noto_Sans_SC({
   display: 'swap',
@@ -15,18 +16,19 @@ export const metadata: Metadata = {
     "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥺</text></svg>",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout(
+  {
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) {
   return (
     <html lang='zh-CN'>
-      <body
-        className={`${notoSans.className} antialiased select-none bg-slate-300 dark:bg-gray-950`}
-      >
-        {children}
-      </body>
+    <body
+      className={`${notoSans.className} antialiased select-none bg-slate-300 dark:bg-gray-950`}
+    >
+    {children}
+    </body>
     </html>
   );
 }

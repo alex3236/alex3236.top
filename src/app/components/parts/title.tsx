@@ -1,4 +1,5 @@
-import { B } from '../utils';
+'use client';
+import {B} from '../utils';
 
 export function PartTitle() {
   return (

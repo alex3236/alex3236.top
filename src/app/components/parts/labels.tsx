@@ -1,5 +1,5 @@
 import Badge from '../badge';
-import { B, PartHolder } from '../utils';
+import {B, PartHolder} from '../utils';
 
 export default function PartLabels() {
   return (
@@ -30,7 +30,7 @@ export default function PartLabels() {
         name='重庆开州 | 福建泉州'
         className='bg-blue-700 text-white'
       />
-      <br />
+      <br/>
       <Badge
         itemProp='jobTitle'
         disabled={true}

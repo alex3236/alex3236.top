@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import {FaGithub} from 'react-icons/fa';
 
 interface AProps {
   ariaLabel?: string;
@@ -7,7 +7,7 @@ interface AProps {
   children: React.ReactNode;
 }
 
-const A: React.FC<AProps> = ({ ariaLabel = '', href, children }) => {
+const A: React.FC<AProps> = ({ariaLabel = '', href, children}) => {
   return (
     <a
       href={href}
@@ -30,7 +30,7 @@ export default function Footer() {
         ariaLabel='此项目的 Github 页面'
         href='https://github.com/alex3236/alex3236.top'
       >
-        <FaGithub />
+        <FaGithub/>
       </A>
     </div>
   );

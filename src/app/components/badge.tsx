@@ -1,15 +1,15 @@
 'use client';
 
 import React from 'react';
-import { IconBaseProps, IconType } from 'react-icons';
+import {IconBaseProps, IconType} from 'react-icons';
 import copy from 'copy-to-clipboard';
-import { Tooltip } from 'react-tooltip';
+import {Tooltip} from 'react-tooltip';
 import Link from 'next/link';
 
-function Icon({ name }: IconBaseProps) {
+function Icon({name}: IconBaseProps) {
   const IconModule = require(`react-icons/fa6`); // eslint-disable-line @typescript-eslint/no-require-imports
   const Icon = IconModule[name as keyof typeof IconModule] as IconType;
-  return <Icon className='inline svg-icon mr-[.15rem]' />;
+  return <Icon className='inline svg-icon mr-[.15rem]'/>;
 }
 
 interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -22,16 +22,17 @@ interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   strikeThrough?: boolean;
 }
 
-export default function Badge({
-  disabled = false,
-  className,
-  icon = 'FaReact',
-  name = 'Test',
-  tooltip,
-  url,
-  strikeThrough = false,
-  ...props
-}: BadgeProps) {
+export default function Badge(
+  {
+    disabled = false,
+    className,
+    icon = 'FaReact',
+    name = 'Test',
+    tooltip,
+    url,
+    strikeThrough = false,
+    ...props
+  }: BadgeProps) {
   const btn = (
     <button
       data-tooltip-id='tooltip-provider'
@@ -53,7 +54,7 @@ export default function Badge({
         }
       }}
     >
-      <Icon name={icon} /> {strikeThrough ? <s>{name}</s> : name}
+      <Icon name={icon}/> {strikeThrough ? <s>{name}</s> : name}
     </button>
   );
   return url ? (

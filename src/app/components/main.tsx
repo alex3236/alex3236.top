@@ -1,10 +1,10 @@
-import { TooltipProvider } from './badge';
+import {TooltipProvider} from './badge';
 import '../style/animate-img.css';
 import Image from 'next/image';
 import PartContacts from './parts/contacts';
 import PartHobbies from './parts/hobbies';
 import PartLabels from './parts/labels';
-import { PartTitle, PartMotto } from './parts/title';
+import {PartMotto, PartTitle} from './parts/title';
 
 export default function Main() {
   return (
@@ -27,11 +27,11 @@ export default function Main() {
           className='lg:hidden relative max-h-64 max-w-64 mt-16 mb-8 object-cover object-top rounded-full shadow-md shadow-slate-400 dark:shadow-slate-300'
         />
         <div className='z-10 h-full md:ml-24 lg:ml-0 lg:py-12 lg:mt-auto lg:max-w-[50vw]'>
-          <PartTitle />
-          <PartLabels />
-          <PartHobbies />
-          <PartContacts />
-          <PartMotto />
+          <PartTitle/>
+          <PartLabels/>
+          <PartHobbies/>
+          <PartContacts/>
+          <PartMotto/>
         </div>
         <div className='max-w-sm self-end hidden lg:block animate-img fixed bottom-0 right-0'>
           <Image
@@ -43,7 +43,7 @@ export default function Main() {
             height={510}
           />
         </div>
-        <TooltipProvider />
+        <TooltipProvider/>
       </div>
     </main>
   );
