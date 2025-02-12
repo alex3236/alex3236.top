@@ -18,6 +18,7 @@ interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   name?: string;
   tooltip?: string;
   url?: string;
+  content?: string;
   disabled?: boolean;
   strikeThrough?: boolean;
 }
@@ -30,6 +31,7 @@ export default function Badge(
     name = 'Test',
     tooltip,
     url,
+    content,
     strikeThrough = false,
     ...props
   }: BadgeProps) {
@@ -45,7 +47,7 @@ export default function Badge(
       onClick={(e) => {
         if (disabled) return;
         if (url === undefined) {
-          copy(name);
+          copy(content ?? name);
           const t = e.currentTarget;
           t.setAttribute('data-tooltip-content', '已复制到剪贴板');
           setTimeout(() => {

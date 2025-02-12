@@ -5,6 +5,7 @@ import PartContacts from './parts/contacts';
 import PartHobbies from './parts/hobbies';
 import PartLabels from './parts/labels';
 import {PartMotto, PartTitle} from './parts/title';
+import PartSpace from "@/app/components/parts/space";
 
 export default function Main() {
   return (
@@ -31,6 +32,7 @@ export default function Main() {
           <PartLabels/>
           <PartHobbies/>
           <PartContacts/>
+          <PartSpace/>
           <PartMotto/>
         </div>
         <div className='max-w-sm self-end hidden lg:block animate-img fixed bottom-0 right-0'>

@@ -11,20 +11,23 @@ export default function PartHobbies() {
       }
     >
       <Badge
-        disabled={true}
         icon='FaCube'
+        tooltip='ID: Alex3236'
+        content='Alex3236'
         name='MC'
         className='bg-green-700 text-white'
       />
       <Badge
-        disabled={true}
         icon='FaTrain'
+        tooltip='UID: 100851312'
+        content='100851312'
         name='星铁'
         className='bg-cyan-700 text-white'
       />
       <Badge
-        disabled={true}
         icon='FaGamepad'
+        tooltip='UID: 221356958'
+        content='221356958'
         name='原神'
         className='bg-cyan-700 text-white'
       />
