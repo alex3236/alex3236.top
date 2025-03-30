@@ -73,8 +73,8 @@ export default function PartContacts() {
         icon='FaEnvelope'
         tooltip='邮箱'
         itemProp='email'
-        url='mailto:me@alex3236.top'
-        name='me@alex3236.top'
+        url='mailto:me@alex3236.moe'
+        name='me@alex3236.moe'
         className='bg-zinc-600 text-white'
       />
     </PartHolder>
