@@ -7,7 +7,7 @@ export default function PartSpace() {
     <Badge
       icon='FaStar'
       tooltip='把星星揉进面团里，用月光当裱花袋～'
-      url='https://space.alex3236.top'
+      url='https://space.alex3236.moe'
       name='星星碎片收容所 ➡'
       className='bg-sky-700 text-sky-50 text-sm align-[0.1em]'
     />
