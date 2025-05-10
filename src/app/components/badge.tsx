@@ -4,7 +4,6 @@ import React from 'react';
 import {IconBaseProps, IconType} from 'react-icons';
 import copy from 'copy-to-clipboard';
 import {Tooltip} from 'react-tooltip';
-import Link from 'next/link';
 
 function Icon({name}: IconBaseProps) {
   const IconModule = require(`react-icons/fa6`); // eslint-disable-line @typescript-eslint/no-require-imports
