@@ -48,7 +48,9 @@ export default function Badge(
       onClick={(e) => {
         if (disabled) return;
         if (url === undefined) {
-          copy(content ?? name);
+          const text = content ?? name;
+          if (text === undefined) return;
+          copy(text);
           const t = e.currentTarget;
           t.setAttribute('data-tooltip-content', '已复制到剪贴板');
           setTimeout(() => {
