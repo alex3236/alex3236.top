@@ -14,6 +14,7 @@ function Icon({name}: IconBaseProps) {
 
 interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   className?: string;
+  children?: React.ReactNode;
   icon?: string;
   name?: string;
   tooltip?: string;
@@ -27,8 +28,9 @@ export default function Badge(
   {
     disabled = false,
     className,
+    children,
     icon = 'FaReact',
-    name = 'Test',
+    name,
     tooltip,
     url,
     content,
@@ -53,19 +55,16 @@ export default function Badge(
           setTimeout(() => {
             t.setAttribute('data-tooltip-content', tooltip ?? '');
           }, 1500);
+        } else {
+          window.open(url, '_blank')?.focus();
         }
       }}
     >
       <Icon name={icon}/> {strikeThrough ? <s>{name}</s> : name}
+      {children}
     </button>
   );
-  return url ? (
-    <Link target='_blank' href={url ?? ''}>
-      {btn}
-    </Link>
-  ) : (
-    btn
-  );
+  return btn;
 }
 
 export function TooltipProvider() {

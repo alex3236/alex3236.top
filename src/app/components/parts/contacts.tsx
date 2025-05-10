@@ -74,9 +74,8 @@ export default function PartContacts() {
         tooltip='邮箱'
         itemProp='email'
         url='mailto:me@alex3236.moe'
-        name='me@alex3236.moe'
         className='bg-zinc-600 text-white'
-      />
+      ><span className='before:content-["me@"]'>alex3236.moe</span></Badge>
     </PartHolder>
   );
 }
