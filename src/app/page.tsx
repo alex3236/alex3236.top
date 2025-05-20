@@ -9,7 +9,6 @@ export default function Home() {
       '@type': 'Person',
       name: 'Alex3236',
       image: 'https://alex3236.top/image.png',
-      email: 'me@alex3236.top',
     },
   };
   return (

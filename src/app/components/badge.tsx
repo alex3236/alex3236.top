@@ -57,6 +57,9 @@ export default function Badge(
             t.setAttribute('data-tooltip-content', tooltip ?? '');
           }, 1500);
         } else {
+          if (url.startsWith('@')) {
+            url = 'mailto:' + url.substring(1).replace(';', '@');
+          }
           window.open(url, '_blank')?.focus();
         }
       }}
