@@ -15,7 +15,7 @@
 
 ## Lighthouse
 
-![Screenshot](https://github.com/user-attachments/assets/e4f8843e-a57c-4f27-bbdc-e5c3f21a41cb)
+![Lighthouse result](https://github.com/user-attachments/assets/d1d6b918-e0ae-4483-bb07-00800d645ac8)
 
 ## Development
 
