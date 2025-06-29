@@ -27,8 +27,8 @@ export default function PartContacts() {
       <Badge
         icon='FaBilibili'
         tooltip='哔哩哔哩'
-        url='https://space.bilibili.com/275212628'
-        name='@Alex3236'
+        url='https://space.bilibili.com/1748925320'
+        name='@令使'
         className='bg-pink-600 text-white'
       />
       <Badge
